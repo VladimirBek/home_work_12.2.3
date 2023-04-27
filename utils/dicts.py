@@ -1,2 +1,4 @@
 def get_val(collection, key, default='default value'):
-    pass
+    if key not in collection:
+        return default
+    return collection[key]
